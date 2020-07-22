@@ -7,7 +7,7 @@
         "build": "vue-cli-service build",
         "test:unit": "vue-cli-service test:unit",
         "lint": "vue-cli-service lint",
-        "push": "git add -A && npx git-cz && git push origin develop"
+        "push": "git add -A && npx git-cz && git push origin dev"
     },
     "dependencies": {
         "axios": "^0.19.2",
