@@ -1,29 +1,22 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+/*
+ * @Author: Tan Jieying
+ * @Date: 2020-07-21 17:52:12
+ * @LastEditors: Tan Jieying
+ * @LastEditTime: 2020-07-22 10:00:48
+ * @FilePath: \vue-echarts-demo\src\router\index.js
+ * @Description: 路由主入口
+ */
 
-Vue.use(VueRouter)
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import routes from './routes';
 
-  const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes,
+});
 
-export default router
+export default router;
